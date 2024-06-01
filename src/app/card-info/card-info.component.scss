@@ -1,0 +1,87 @@
+@import './../../../styles/utils.scss';
+
+:host {
+  width: 100%;
+}
+
+.card-info {
+  @include flex(space-between, center, column);
+  width: auto;
+  height: get-vh(617px);
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  // @media (min-width: 810px) and (max-width: 1199px),
+  // (max-width: 809px) {
+  //   width: 100%;
+  //   flex-direction: row;
+  //   gap: 16px;
+  // }
+
+  &__text {
+    @include flex(space-between, center, row);
+    width: 100%;
+    z-index: 1;
+    border: 1px solid $white;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+    &__header {
+      font-size: em(20);
+    }
+
+    &__sub {
+      font-size: em(14);
+    }
+  }
+
+  &__social-media {
+    @include flex(flex-end, center, row);
+    width: 100%;
+    z-index: 1;
+    margin-top: get-vh(16px);
+
+    &__icon {
+      @include flex(center, center, row);
+      width: get-vh(36px);
+      height: get-vh(36px);
+      border-radius: 50%;
+      cursor: pointer;
+      border: 1px solid $white;
+      backdrop-filter: blur(15px);
+      background-color: rgba(255, 255, 255, 0.05);
+
+      svg {
+        width: get-vh(20px);
+        height: get-vh(20px);
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 8px;
+
+    img {
+      @include img(100%, 100%, cover, center);
+      border-radius: 8px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

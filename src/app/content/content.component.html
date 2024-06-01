@@ -1,0 +1,12 @@
+<app-navbar />
+<app-header [title]="header.title" [desc]="header.desc" [src]="header.src" />
+
+<app-stats />
+
+@for (item of cards; track $index) {
+<app-card [title]="item.title" [number]="$index + 1" [src]="item.src" />
+}
+
+<app-banner-contact />
+
+<app-footer />

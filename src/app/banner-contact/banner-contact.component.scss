@@ -1,0 +1,64 @@
+@import './../../../styles/utils.scss';
+
+:host {
+  @include flex(space-between, flex-end, row);
+  width: 100%;
+  height: get-vh(340px);
+  background-color: $main-color;
+  border-radius: 8px;
+  padding: get-vh(64px);
+  box-sizing: border-box;
+  gap: 16px;
+
+  @media (min-width: 810px) and (max-width: 1199px),
+  (max-width: 809px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.content {
+  @include flex(center, flex-start, column);
+  gap: 10px;
+  color: $dark;
+
+  &__sub {
+    font-size: em(14);
+  }
+
+  &__title {
+    font-size: em(70);
+    font-family: 'averox';
+  }
+}
+
+.btn {
+  @include flex(center, center, row);
+  gap: 10px;
+  background-color: $dark;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  &__text {
+    @include flex(center, center, row);
+    font-size: em(14);
+    color: $white;
+  }
+
+  &__image {
+    @include flex(center, center, row);
+
+    svg {
+      transition: transform .4s ease-in-out;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    svg {
+      transform: rotate(45deg);
+    }
+  }
+}

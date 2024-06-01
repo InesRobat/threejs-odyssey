@@ -1,0 +1,13 @@
+<ng-container *ngIf="card">
+    <app-navbar />
+    <app-header [src]="card.src" [title]="card.title" [desc]="card.desc" />
+
+    <div class="flex-wrap">
+        @for (item of card.cardInfo; track $index) {
+        <app-card-info [title]="item.title" [sub]="item.sub" [src]="item.src" [codeLink]="item.codeLink"
+            [websiteLink]="item.websiteLink" />
+        }
+    </div>
+
+    <app-footer />
+</ng-container>

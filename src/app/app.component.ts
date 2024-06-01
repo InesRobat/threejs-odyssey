@@ -10,4 +10,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'threejs-journey';
+
+  public prepareRoute(outlet: RouterOutlet) {
+    // return outlet && outlet.activatedRouteData && outlet.activatedRouteData['data'];
+  }
 }

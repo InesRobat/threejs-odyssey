@@ -1,0 +1,79 @@
+@import './../../../styles/utils.scss';
+
+:host {
+  @include flex(center, center, column);
+  width: 100%;
+  height: get-vh(864px);
+}
+
+.image {
+  @include flex(flex-end, center, column);
+  width: 100%;
+  height: get-vh(864px);
+  position: relative;
+
+  img {
+    @include img(100%, 100%, cover, center);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  &__text {
+    @include flex(space-between, flex-end, row);
+    width: 100%;
+    padding: get-vh(64px);
+    box-sizing: border-box;
+
+    &__header {
+      @include flex(center, flex-start, column);
+      color: $white;
+      width: 40%;
+      gap: 10px;
+
+      &__title {
+        font-size: 5rem;
+        font-family: 'averox';
+      }
+
+      &__desc {
+        font-size: 1rem;
+      }
+    }
+
+    &__btns {
+      @include flex(center, center, row);
+      gap: 10px;
+
+      &__img {
+        @include flex(center, center, row);
+        padding: 8px 12px;
+        box-sizing: border-box;
+        width: get-vh(40px);
+        height: get-vh(40px);
+        border-radius: 100%;
+        border: 1px solid $white;
+        background-color: rgba(255, 255, 255, .05);
+
+        svg {
+          transform: scale(9);
+          transition: transform .4s ease-in-out;
+        }
+      }
+
+      &__btn-text {
+        font-size: .75rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          transform: translateY(2px) scale(9);
+        }
+      }
+    }
+  }
+}

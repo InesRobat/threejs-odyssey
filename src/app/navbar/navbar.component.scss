@@ -1,0 +1,32 @@
+@import './../../../styles/utils.scss';
+
+:host {
+  @include flex(space-between, center, row);
+  width: 100%;
+  height: get-vh(48px);
+  font-family: 'averox';
+}
+
+.logo {
+  cursor: pointer;
+  font-size: em(24);
+}
+
+.pages {
+  @include flex(center, center, row);
+  gap: 10px;
+  color: $white;
+
+  &__page {
+    background-color: $light;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.contact {
+      background-color: $main-color;
+
+    }
+  }
+}

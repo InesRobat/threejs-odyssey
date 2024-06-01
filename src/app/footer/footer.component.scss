@@ -1,0 +1,14 @@
+@import './../../../styles/utils.scss';
+
+:host {
+  @include flex(center, center, row);
+  width: 100%;
+  height: get-vh(80px);
+  font-family: 'averox';
+  padding: 32px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: $light;
+  color: #f4f2edb3;
+  font-size: em(14);
+}
