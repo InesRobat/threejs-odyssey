@@ -7,29 +7,29 @@ export const HEADER = {
 export const CARDS = [
     {
         title: 'Basics',
-        desc: 'Mastering the fundamentals like cameras, geometries, materials, and textures. Add a debug panel with lil.GUI for real-time tweaks and animate the scene smoothly with requestAnimationFrame.',
+        desc: 'Mastering the fundamentals like cameras, geometries, materials, and textures. Add a debug panel with lil-gui for real-time tweaks and animate the scene smoothly with requestAnimationFrame.',
         src: './assets/images/pexels-rostislav-5011647.jpg',
         cardInfo: [
             {
                 title: 'Textures',
                 sub: 'Lesson 10',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#manual/en/introduction/Creating-a-scene',
+                src: './assets/images/basics/textures.png',
+                codeLink: 'https://github.com/InesRobat/textures',
+                websiteLink: 'https://square-textures.vercel.app/',
             },
             {
                 title: 'Materials',
                 sub: 'Lesson 11',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                src: './assets/images/basics/materials.png',
+                codeLink: 'https://github.com/InesRobat/sunset-mountain-materials',
+                websiteLink: 'https://sunset-mountain-materials.vercel.app/',
             },
             {
                 title: '3D Text',
                 sub: 'Lesson 12',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                src: './assets/images/basics/3d-text.png',
+                codeLink: 'https://github.com/InesRobat/3d-quote',
+                websiteLink: 'https://3d-quote.vercel.app/',
             },
         ]
 

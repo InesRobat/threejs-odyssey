@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'threejs-journey';
+  title = 'threejs-odyssey';
 
   public prepareRoute(outlet: RouterOutlet) {
     // return outlet && outlet.activatedRouteData && outlet.activatedRouteData['data'];
