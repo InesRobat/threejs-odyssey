@@ -32,6 +32,7 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollTo(elementId: string) {
+    console.log(elementId)
     if (Object.keys(this.route.snapshot.params).length === 0) {
       this.viewPortScroller.scrollToAnchor(elementId);
     } else {

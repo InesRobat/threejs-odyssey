@@ -19,7 +19,7 @@
     height: get-vh(360px);
   }
 
-  img {
+  .photo {
     @include img(100%, 100%, cover, center);
     position: absolute;
     top: 0;
@@ -60,8 +60,9 @@
           border-radius: 100%;
           background-color: rgba(255, 255, 255, .05);
 
-          svg {
-            transform: scale(2.5);
+          &__arrow {
+            width: get-vh(22px);
+            height: get-vh(22px);
             transition: transform .4s ease-in-out;
           }
         }
@@ -70,13 +71,7 @@
           font-size: em(14);
         }
 
-        &:hover {
-          cursor: pointer;
 
-          svg {
-            transform: rotate(45deg) scale(2.5);
-          }
-        }
       }
     }
 
@@ -95,6 +90,16 @@
       &__text {
         font-size: em(13);
       }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+
+    .image__text__header__btn__img__arrow {
+      transform: rotate(45deg);
     }
   }
 }

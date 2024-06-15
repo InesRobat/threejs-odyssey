@@ -1,4 +1,4 @@
-<div class="card-info" (click)="goTo(websiteLink)">
+<div class="card-info" (click)="goTo(websiteLink)" #card>
     <div class="card-info__social-media" (click)="goTo(codeLink)">
         <div class="card-info__social-media__icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fcfcfc" viewBox="0 0 256 256">
@@ -15,6 +15,6 @@
     </div>
 
     <div class="card-info__image">
-        <img [src]="src" alt="image">
+        <img [src]="src" alt="image" draggable="false">
     </div>
 </div>

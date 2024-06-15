@@ -14,9 +14,9 @@
   @include flex(center, center, row);
   gap: 16px;
   width: 100%;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
 
-  @media (max-width: 809px) {
+  @media (min-width: 810px) and (max-width: 1199px) {
     flex-direction: column;
   }
 }

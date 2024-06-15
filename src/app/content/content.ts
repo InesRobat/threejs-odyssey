@@ -1,6 +1,6 @@
 export const HEADER = {
     title: 'Tracing My Journey',
-    desc: 'Navigating Progress in Three.Js, as I navigate the complexities of 3D web development, sharing insights and reflections to illuminate the path forward.',
+    desc: 'Navigating progress in Three.Js Journey by Bruno Simon, as I navigate the complexities of 3D web development, sharing insights and reflections to illuminate the path forward.',
     src: './assets/images/pexels-frostroomhead-9436715.jpg'
 }
 
@@ -41,38 +41,45 @@ export const CARDS = [
         cardInfo: [
             {
                 title: 'Lights',
-                sub: 'Lesson 15',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#manual/en/introduction/Creating-a-scene',
+                sub: 'Lesson 14',
+                src: './assets/images/classic/lights.png',
+                codeLink: 'https://github.com/InesRobat/world-of-lights',
+                websiteLink: 'https://world-of-lights.vercel.app/',
             },
             {
                 title: 'Shadows',
-                sub: 'Lesson 16',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                sub: 'Lesson 15',
+                src: './assets/images/classic/shadows.png',
+                codeLink: 'https://github.com/InesRobat/dribbling-shadows',
+                websiteLink: 'https://dribbling-shadows.vercel.app/',
             },
             {
                 title: 'Haunted House',
-                sub: 'Lesson 17',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                sub: 'Lesson 16',
+                src: './assets/images/classic/haunted-house.png',
+                codeLink: 'https://github.com/InesRobat/sunset-shadows',
+                websiteLink: 'https://sunset-shadows.vercel.app/',
             },
             {
                 title: 'Particles',
-                sub: 'Lesson 18',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                sub: 'Lesson 17',
+                src: './assets/images/classic/particles.png',
+                codeLink: 'https://github.com/InesRobat/particles-wave-dance',
+                websiteLink: 'https://particles-wave-dance.vercel.app/',
             },
             {
                 title: 'Galaxy Generator',
+                sub: 'Lesson 18',
+                src: './assets/images/classic/galaxy.png',
+                codeLink: 'https://github.com/InesRobat/cosmic-stellar-forge',
+                websiteLink: 'https://cosmic-stellar-forge.vercel.app/',
+            },
+            {
+                title: 'Scroll based animation',
                 sub: 'Lesson 19',
-                src: './assets/images/pexels-rostislav-5011647.jpg',
-                codeLink: 'https://threejs.org/docs/#api/en/textures/Texture',
-                websiteLink: 'https://threejs.org/docs/#api/en/textures/Texture',
+                src: './assets/images/classic/scroll-animation.png',
+                codeLink: 'https://github.com/InesRobat/scrollmotion-parallax-effects',
+                websiteLink: 'https://scrollmotion-parallax-effects.vercel.app/',
             },
         ]
 
@@ -81,6 +88,15 @@ export const CARDS = [
         title: 'Advanced techniques',
         desc: 'Add physics to your world for realistic object collisions and interactions. Import your custom Blender model and enhance its realism with advanced materials and textures.',
         src: './assets/images/pexels-merlin-14032497.jpg',
+        cardInfo: [
+            {
+                title: 'Physics',
+                sub: 'Lesson 20',
+                src: './assets/images/classic/lights.png',
+                codeLink: 'https://github.com/InesRobat/world-of-lights',
+                websiteLink: 'https://world-of-lights.vercel.app/',
+            },
+        ]
 
     },
     {

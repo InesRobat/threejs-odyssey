@@ -49,15 +49,19 @@
   &__image {
     @include flex(center, center, row);
 
-    svg {
+    img {
+      width: get-vh(30px);
+      height: get-vh(30px);
       transition: transform .4s ease-in-out;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     cursor: pointer;
 
-    svg {
+    img {
       transform: rotate(45deg);
     }
   }
