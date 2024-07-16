@@ -20,13 +20,19 @@
   }
 
   .photo {
-    @include img(100%, 100%, cover, center);
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 8px;
+    width: 100%;
+    height: get-vh(1080px);
     z-index: -1;
-    transition: all .4s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+
+    img {
+      transition: transform .1s ease-out;
+      @include img(100%, 100%, cover, center);
+    }
   }
 
   &__text {

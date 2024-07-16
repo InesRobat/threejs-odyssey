@@ -22,7 +22,6 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   padding: 16px;
   box-sizing: border-box;
   border-radius: 8px;
-  transition: all 0.3s $hoverEasing, opacity 0.3s $hoverEasing;
 
   // @media (min-width: 810px) and (max-width: 1199px),
   // (max-width: 809px) {
@@ -83,10 +82,22 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     left: 0;
     z-index: 0;
     border-radius: 8px;
+    overflow: hidden;
 
     img {
       @include img(100%, 100%, cover, center);
       border-radius: 8px;
+      transition: all 0.3s $hoverEasing,
+        transform 0.3s $hoverEasing,
+        opacity 0.3s $hoverEasing;
+
+      --x: 0;
+      --y: 0;
+      --d: 50;
+
+      &:hover {
+        transform: scale(1.1) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+      }
     }
   }
 

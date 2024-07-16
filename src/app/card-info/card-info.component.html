@@ -15,6 +15,7 @@
     </div>
 
     <div class="card-info__image">
-        <img [src]="src" alt="image" draggable="false">
+        <img [src]="src" alt="image" draggable="false" #image (mousemove)="handleMouseMove($event, image)"
+            (mouseleave)="handleMouseLeave($event, image)">
     </div>
 </div>

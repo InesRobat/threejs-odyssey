@@ -28,8 +28,8 @@ export const CARDS = [
                 title: '3D Text',
                 sub: 'Lesson 12',
                 src: './assets/images/basics/3d-text.png',
-                codeLink: 'https://github.com/InesRobat/3d-quote',
-                websiteLink: 'https://3d-quote.vercel.app/',
+                codeLink: 'https://github.com/InesRobat/radiant-quote',
+                websiteLink: 'https://radiant-quote.vercel.app/',
             },
         ]
 
@@ -92,10 +92,24 @@ export const CARDS = [
             {
                 title: 'Physics',
                 sub: 'Lesson 20',
-                src: './assets/images/classic/lights.png',
-                codeLink: 'https://github.com/InesRobat/world-of-lights',
-                websiteLink: 'https://world-of-lights.vercel.app/',
-            },
+                src: './assets/images/advanced/physics.png',
+                codeLink: 'https://github.com/InesRobat/physics-explorations',
+                websiteLink: 'https://physics-explorations.vercel.app/',
+            }
+            // {
+            //     title: 'Imported models',
+            //     sub: 'Lesson 21',
+            //     src: './assets/images/classic/lights.png',
+            //     codeLink: 'https://github.com/InesRobat/physics-explorations',
+            //     websiteLink: 'https://physics-explorations.vercel.app/',
+            // },
+            // {
+            //     title: 'Raycaster and Mouse events',
+            //     sub: 'Lesson 22',
+            //     src: './assets/images/classic/lights.png',
+            //     codeLink: 'https://github.com/InesRobat/physics-explorations',
+            //     websiteLink: 'https://physics-explorations.vercel.app/',
+            // },
         ]
 
     },

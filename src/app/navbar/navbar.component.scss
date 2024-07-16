@@ -10,6 +10,10 @@
 .logo {
   cursor: pointer;
   font-size: em(24);
+  // background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-animation: hue 10s infinite linear;
 }
 
 .pages {
@@ -37,6 +41,9 @@
         // transform-origin: 100% 100%;
         // transition: transform .6s cubic-bezier(.53, .21, 0, 1);
         // will-change: transform;
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 2s infinite;
       }
     }
 
@@ -45,5 +52,25 @@
     //   background-color: $dark;
     //   border: 1px solid $light;
     // }
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
   }
 }

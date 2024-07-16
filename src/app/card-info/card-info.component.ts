@@ -1,7 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild, type OnInit } from '@angular/core';
-import { fromEvent, map, repeat, switchMap, takeUntil } from 'rxjs';
-import { merge } from 'rxjs/operators';
 @Component({
   selector: 'app-card-info',
   standalone: true,
@@ -36,29 +34,8 @@ export class CardInfoComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // if (this.card) {
-    //   this.width = this.card.nativeElement.offsetWidth;
-    //   this.height = this.card.nativeElement.offsetHeight;
 
-    //   const mouseMove$ = fromEvent<MouseEvent>(this.card.nativeElement, 'mousemove');
-    //   const mouseLeave$ = fromEvent<MouseEvent>(this.card.nativeElement, 'mouseleave');
-    //   const mouseEnter$ = fromEvent<MouseEvent>(this.card.nativeElement, 'mouseenter').pipe(takeUntil(mouseLeave$));
 
-    //   mouseEnter$.pipe(
-    //     switchMap(() => mouseMove$),
-    //     map((event: any) => ({
-    //       mouseX: event.pageX - this.nativeElement.offsetLeft - this.width / 2,
-    //       mouseY: event.pageY - this.nativeElement.offsetTop - this.height / 2
-    //     })),
-    //     merge(mouseLeave$),
-    //     repeat()
-    //   ).subscribe((e: any) => {
-    //     this.mouseX = e.mouseX;
-    //     this.mouseY = e.mouseY;
-
-    //     this.nativeElement.style.transform = `rotateY(${-this.mousePX * -30}deg) rotateX(${this.mousePY * -30}deg)`;
-    //   });
-    // }
   }
 
   get mousePX() {
@@ -71,6 +48,17 @@ export class CardInfoComponent implements OnInit, AfterViewInit {
 
   goTo(url: string) {
     window.open(url, '_blank');
+  }
+
+  handleMouseMove(event: MouseEvent, element: HTMLDivElement) {
+    const bounds = element.getBoundingClientRect();
+    element.style.setProperty('--x', (event.clientX - (bounds.left + Math.floor(bounds.width / 2))).toString())
+    element.style.setProperty('--y', (event.clientY - (bounds.top + Math.floor(bounds.height / 2))).toString())
+  }
+
+  handleMouseLeave(event: MouseEvent, element: HTMLDivElement) {
+    element.style.setProperty('--x', '0')
+    element.style.setProperty('--y', '0')
   }
 
 }
