@@ -6,6 +6,7 @@
   height: get-vh(180px);
   padding: 48px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .stats {
@@ -40,4 +41,53 @@
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
+}
+
+div {
+  width: fit-content;
+}
+
+h3 {
+  margin: .1em 0;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  font-size: rem(50);
+}
+
+h3+span {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+#number {
+  position: relative;
+  display: flex;
+  margin-right: .2em;
+  width: 0;
+  overflow: hidden;
+  height: 50px;
+  transition: width 1.8s ease;
+}
+
+#number>span {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  opacity: 0;
+  flex-shrink: 2;
+  flex-basis: 50px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  line-height: 50px;
+  transition: all 1.8s ease;
+}
+
+#number>span.visible {
+  position: static;
+  width: 30px;
+  opacity: 1;
+  flex-shrink: 1;
 }

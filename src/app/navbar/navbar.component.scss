@@ -7,13 +7,26 @@
   font-family: 'averox';
 }
 
+$vivid-pink: color-mix(in srgb, oklch(69.02% .277 332.77), $white 70%);
+$electric-violet: color-mix(in srgb, oklch(53.18% .28 296.97), $white 70%);
+$orange-red: color-mix(in srgb, oklch(63.32% .24 31.68), $white 60%);
+$bright-blue: color-mix(in srgb, oklch(51.01% .274 263.83), $white 60%);
+$page-background: #110f0f;
+
 .logo {
   cursor: pointer;
   font-size: em(24);
-  // background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  // -webkit-animation: hue 10s infinite linear;
+  background: linear-gradient(140deg, $vivid-pink 0%, $vivid-pink 15%, color-mix(in srgb, $vivid-pink, $electric-violet 50%) 25%, color-mix(in srgb, $vivid-pink, $electric-violet 10%) 35%, color-mix(in srgb, $vivid-pink, $orange-red 50%) 42%, color-mix(in srgb, $vivid-pink, $orange-red 50%) 44%, color-mix(in srgb, $vivid-pink, #110f0f 70%) 47%, $electric-violet 48%, $bright-blue 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background-position 1.8s ease-out;
+  background-size: 200% 100%;
+  background-position: 100% 0%;
+
+  &:hover {
+    background-position: 0% 0%;
+  }
 }
 
 .pages {
@@ -23,6 +36,7 @@
 
   &__page {
     background-color: $light;
+    border: 1px solid transparent;
     border-radius: 8px;
     padding: 16px 20px;
     box-sizing: border-box;
@@ -30,6 +44,7 @@
 
     &.contact {
       background-color: $main-color;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         cursor: pointer;

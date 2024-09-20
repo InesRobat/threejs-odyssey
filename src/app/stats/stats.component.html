@@ -1,6 +1,18 @@
 @for (item of items; track $index) {
 <div class="stats" #statsNumbers>
-    <div class="stats__number">{{ item.number }}</div>
+    <div class="stats__number" [countUp]="item.number" [duration]="5000"></div>
     <div class="stats__text">{{ item.text }}</div>
 </div>
 }
+
+<!-- <div *ngFor="let item of items" class="stats">
+    <h3>
+        <span #scrollNum id="number">
+            <span #m></span>
+            <span #c></span>
+            <span #d></span>
+            <span #u></span>
+        </span>
+        <div class="stats__text">{{ item.text }}</div>
+    </h3>
+</div> -->
