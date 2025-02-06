@@ -181,20 +181,20 @@ export const CARDS = [
                 codeLink: 'https://github.com/InesRobat/skyburst/tree/master',
                 websiteLink: 'https://skyburst.vercel.app/',
             },
-            // {
-            //     title: 'Lights Shading',
-            //     sub: 'Lesson 35',
-            //     src: './assets/images/shaders/shaders.png',
-            //     codeLink: '',
-            //     websiteLink: '',
-            // },
-            // {
-            //     title: 'Raging Sea Shading',
-            //     sub: 'Lesson 36',
-            //     src: './assets/images/shaders/shaders.png',
-            //     codeLink: '',
-            //     websiteLink: '',
-            // },
+            {
+                title: 'Lights Shading',
+                sub: 'Lesson 35',
+                src: './assets/images/shaders/light-shading.png',
+                codeLink: 'https://github.com/InesRobat/lumos',
+                websiteLink: 'https://lumos-nine.vercel.app/',
+            },
+            {
+                title: 'Raging Sea Shading',
+                sub: 'Lesson 36',
+                src: './assets/images/shaders/raging-sea-shader.png',
+                codeLink: 'https://github.com/InesRobat/tempest-shade',
+                websiteLink: 'https://tempest-shade.vercel.app/',
+            },
             // {
             //     title: 'Halftone Shading',
             //     sub: 'Lesson 37',
@@ -257,18 +257,67 @@ export const CARDS = [
         title: 'Extra',
         desc: 'Mastering shaders opens doors to exploring new techniques. Ensure your projects are accessible across devices by monitoring and optimizing performance, ensuring seamless experiences for all users.',
         src: './assets/images/pexels-merlin-14367716.jpg',
+        cardInfo: [
+            {
+                title: 'Post-processing',
+                sub: 'Lesson 45',
+                src: './assets/images/extra/post-processing.png',
+                codeLink: 'https://github.com/InesRobat/post-processing-3d',
+                websiteLink: 'https://post-processing-3d.vercel.app/',
+            },
+            {
+                title: 'Intro and loading progress & mixing HTML and WebGL',
+                sub: 'Lesson 47 & 48',
+                src: './assets/images/extra/loading.png',
+                codeLink: 'https://github.com/InesRobat/neon-cyber-mesh',
+                websiteLink: 'https://neon-cyber-mesh.vercel.app/',
+            },
+        ]
 
     },
     {
         title: 'Portal Scene',
         desc: 'Master Blender to craft captivating scenes, then elevate your creations by mastering the baking technique for achieving optimal lighting and shadows, resulting in visually stunning environments.',
         src: './assets/images/pexels-mo-eid-1268975-8347501.jpg',
+        cardInfo: [
+            {
+                title: 'Portal Scene',
+                sub: 'Lesson 49 to 52',
+                src: './assets/images/portal/portal.png',
+                codeLink: 'https://github.com/InesRobat/luminara',
+                websiteLink: 'https://luminara-eosin.vercel.app/',
+            },
+        ]
 
     },
     {
         title: 'React Three Fiber',
         desc: 'Explore the seamless fusion of Three.js and React using React Three Fiber (R3F). With minimal code, unleash the potential to craft immersive and engaging Three.js experiences directly within your React applications.',
         src: './assets/images/pexels-merlin-14314638.jpg',
+        cardInfo: [
+            {
+                title: '',
+                sub: 'Lesson 52',
+                src: './assets/images/react/portal.png',
+                codeLink: '',
+                websiteLink: '',
+            },
+        ]
+
+    },
+    {
+        title: 'Personal Works',
+        desc: 'Check out this section to explore the personal projects I have worked on. Each project is a testament to my dedication to crafting exceptional experiences using Three.js and React Three Fiber.',
+        src: './assets/images/personal-work.jpg',
+        cardInfo: [
+            {
+                title: '',
+                sub: 'Lesson 52',
+                src: './assets/images/react/portal.png',
+                codeLink: '',
+                websiteLink: '',
+            },
+        ]
 
     }
 ]

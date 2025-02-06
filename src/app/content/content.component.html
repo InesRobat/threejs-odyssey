@@ -3,9 +3,11 @@
 
 <app-stats />
 
-@for (item of cards; track $index) {
-<app-card [title]="item.title" [number]="$index + 1" [src]="item.src" />
-}
+<div class="cards-container">
+    @for (item of cards; track $index) {
+    <app-card [title]="item.title" [number]="$index + 1" [src]="item.src" class="card-item" />
+    }
+</div>
 
 <app-banner-contact />
 

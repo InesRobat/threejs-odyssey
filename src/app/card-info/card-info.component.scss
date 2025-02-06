@@ -5,6 +5,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 :host {
   width: get-vh(618px);
+  flex-grow: 1;
 
   @media (min-width: 810px) and (max-width: 1199px),
   (max-width: 809px) {
@@ -22,6 +23,7 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   padding: 16px;
   box-sizing: border-box;
   border-radius: 8px;
+  overflow: hidden;
 
   // @media (min-width: 810px) and (max-width: 1199px),
   // (max-width: 809px) {
@@ -81,12 +83,12 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     top: 0;
     left: 0;
     z-index: 0;
-    border-radius: 8px;
+    // border-radius: 8px;
     overflow: hidden;
 
     img {
       @include img(100%, 100%, cover, center);
-      border-radius: 8px;
+      // border-radius: 8px;
       transition: all 0.3s $hoverEasing,
         transform 0.3s $hoverEasing,
         opacity 0.3s $hoverEasing;
